@@ -7,6 +7,6 @@ this is a rather techincal operation, so please be patient.
 `bash pdf2pdf.sh pdf_filename`
 
 ##output
-your file will be converted to a pdf with the same name as the original. for convenience the timestamp will also be unmodified from the original
+your file will be converted to a pdf with the same name as the original. 
 
 
