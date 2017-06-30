@@ -21,6 +21,9 @@ do
 		echo -ne '##################     (100%)\r'
 		echo -ne '\n'
 
+		# important, update time-stamp
+		touch $file
+
 		echo -e 'Conversion completed.\n'
 
 	else
