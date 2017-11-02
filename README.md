@@ -1,8 +1,10 @@
 # pdf2pdf
 This software performs the magical pdf-to-pdf conversion popular in academic journal submission sites.
 
-This conversion is a rather technical operation, so please be patient.
+New speedup in version 2. Still runs in O(1) time, but now ~15% faster! 
+Version 2 now requires you compile the C++ code sleep.c thusly:
 
+`g++ sleep.c -o fastsleep`.
 
 ## Usage
 `bash pdf2pdf.sh pdf_filename1 pdf_filename2 ...`

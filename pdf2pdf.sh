@@ -7,19 +7,12 @@ do
 	if file --mime-type "$file" | grep -q pdf$; then
 	    echo "Converting $file"
 
-		sleep 1	
-		echo -ne '###                     (16%)\r'
-		sleep 1
-		echo -ne '######                  (33%)\r'
-		sleep 1
-		echo -ne '#########               (50%)\r'
-		sleep 1
-		echo -ne '############            (66%)\r'
-		sleep 1
-		echo -ne '###############         (83%)\r'
-		sleep 1
-		echo -ne '##################     (100%)\r'
-		echo -ne '\n'
+		if [ -f ./fastsleep ]; then
+			./fastsleep
+		else
+   			echo "File fastsleep does not exist. Please compile (see readme)."
+			break;
+		fi	
 
 		# important, update time-stamp
 		touch $file
