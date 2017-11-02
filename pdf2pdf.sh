@@ -8,15 +8,13 @@ do
 	    echo "Converting $file"
 
 		sleep 1	
-		echo -ne '###                     (16%)\r'
+		echo -ne '###                     (20%)\r'
 		sleep 1
-		echo -ne '######                  (33%)\r'
+		echo -ne '######                  (40%)\r'
 		sleep 1
-		echo -ne '#########               (50%)\r'
+		echo -ne '#########               (60%)\r'
 		sleep 1
-		echo -ne '############            (66%)\r'
-		sleep 1
-		echo -ne '###############         (83%)\r'
+		echo -ne '############            (80%)\r'
 		sleep 1
 		echo -ne '##################     (100%)\r'
 		echo -ne '\n'
