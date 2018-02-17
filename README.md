@@ -6,6 +6,10 @@ Version 2 now requires you compile the C++ code sleep.c thusly:
 
 `g++ sleep.c -o fastsleep`.
 
+Requires imagemagick. It can probably be installed like this: 
+OSX: `brew install imagemagick`
+ubuntu: `sudo apt-get install imagemagick`
+
 ## Usage
 `bash pdf2pdf.sh pdf_filename1 pdf_filename2 ...`
 
@@ -15,5 +19,5 @@ So, the following will convert all pdf files in the current folder:
 `bash pdf2pdf.sh *`
 
 ## Output
-Each listed pdf file will be converted to a pdf with the same name as the original.
+Each listed pdf file will be converted to a lower-resolution pdf saved as "<RandomNumber>.pdf" in the current working directory.
 
