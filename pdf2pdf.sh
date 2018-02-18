@@ -17,8 +17,8 @@ do
 		# important, update time-stamp
 		touch $file
 		
-		# convert vector to raster and downscale to 75dpi (requires imagemagick)
-		convert -density 75 $file -quality 75 output.pdf
+		# rasterize and subtly degrade quality
+		convert -density 95 $file -quality 95 $RANDOM.pdf
 
 		echo -e 'Conversion completed.\n'
 
