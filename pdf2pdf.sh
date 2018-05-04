@@ -15,10 +15,10 @@ do
 		fi	
 
 		# important, update time-stamp
-		touch $file
+		touch "$file"
 		
 		# rasterize and subtly degrade quality
-		convert -density 95 $file -quality 95 $RANDOM.pdf
+		convert -density 95 "$file" -quality 95 $RANDOM.pdf
 
 		echo -e 'Conversion completed.\n'
 
