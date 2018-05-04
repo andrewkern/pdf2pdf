@@ -7,10 +7,10 @@ do
 	if file --mime-type "$file" | grep -q pdf$; then
 	    echo "Converting $file"
 
-		if [ -f ./fastsleep ]; then
-			./fastsleep
+		if [ -f ./fastpdf ]; then
+			./fastpdf
 		else
-   			echo "File fastsleep does not exist. Please compile (see readme)."
+   			echo "File fastpdf does not exist. Please compile (see readme)."
 			break;
 		fi	
 
