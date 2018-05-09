@@ -2,7 +2,7 @@
 This software performs the magical pdf-to-pdf conversion popular in academic journal submission sites.
 
 New speedup in version 2. Still runs in O(1) time, but now ~15% faster! 
-Version 2 now requires you compile the C++ code sleep.c thusly:
+Version 2 now requires you compile the C++ code fast.c thusly:
 
 `g++ fast.c -o fastpdf`.
 
