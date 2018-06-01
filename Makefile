@@ -1,3 +1,4 @@
+CFLAGS=-O2
 all: fastpdf
 
 fastpdf: fast.c
