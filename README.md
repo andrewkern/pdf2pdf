@@ -13,11 +13,11 @@ ubuntu: `sudo apt-get install imagemagick`
 ## Usage
 `bash pdf2pdf.sh pdf_filename1 pdf_filename2 ...`
 
-The software first checks whether each file is actually a pdf file, and then converts the pdf files into pdf. It skips any files that are not pdf.
+The software first checks whether each file is actually a pdf file, and then converts the pdf files into slightly worse pdf's. It skips any files that are not pdf.
 
 So, the following will convert all pdf files in the current folder:
 `bash pdf2pdf.sh *`
 
 ## Output
-Each listed pdf file will be converted to a lower-resolution pdf saved as "<RandomNumber>.pdf" in the current working directory.
+Each listed pdf file will be converted to a lower-resolution pdf saved as "RandomNumber.pdf" in the current working directory.
 
