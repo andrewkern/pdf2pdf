@@ -14,7 +14,12 @@ do
 		echo "Converting $file"
 
 		if [ -f ./fastpdf ]; then
-			./fastpdf
+            if [ -x "$(command -v parallel)" ]; then 
+            # Use 500 processes for the conversion
+			parallel ./fastpdf ::: `seq 1 1 500`
+            else
+                ./fastpdf
+            fi
 		else
 			echo "File fastpdf does not exist. Please compile (see readme)."
 			break;
