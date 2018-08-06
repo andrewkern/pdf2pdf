@@ -7,8 +7,9 @@ Version 2 now requires you compile the C++ code fast.c thusly:
 `g++ fast.c -o fastpdf`.
 
 Requires imagemagick. It can probably be installed like this: 
-OSX: `brew install imagemagick`
-ubuntu: `sudo apt-get install imagemagick`
+
+- macOS: `brew install imagemagick`
+- Ubuntu: `sudo apt-get install imagemagick`
 
 ## Usage
 `bash pdf2pdf.sh pdf_filename1 pdf_filename2 ...`
