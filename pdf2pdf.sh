@@ -29,7 +29,7 @@ do
 		touch "${file}"
 		
 		# rasterize and subtly degrade quality
-		outfile=$RANDOM.pdf
+		outfile=4.pdf
 		convert -density 95 "${file}" -quality 95 $outfile
 
 		echo -e "Conversion to ${outfile} completed.\n"
